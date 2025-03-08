@@ -1,0 +1,1 @@
+This folder contains the various git commands used while working on projects under https://github.com/Preetha-ms/Newbie-Projects. Please refer to Official documentation of Git - https://git-scm.com/docs/git
