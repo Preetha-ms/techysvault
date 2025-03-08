@@ -1,0 +1,15 @@
+#Upload Your Project from VS Code
+  
+1. In VS Code open the project, Initialize Git (Only for first time). 
+    git init  # Initialize Git (if not already initialized)
+    git remote add origin https://github.com/yourusername/repository-name.git # Replace yourusername/repository-name.git with your actual GitHub username and repo name.
+
+2. Add and Commit your files to Git
+    git add .  # Add all files
+    git commit -m "Initial commit - <project name> project"
+
+3. Push to GitHub
+   git branch -M master  # Ensure the branch is "master"
+   git push -u origin main  # Push the code to GitHub
+
+
