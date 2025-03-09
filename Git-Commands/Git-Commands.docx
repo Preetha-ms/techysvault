@@ -12,4 +12,38 @@
    git branch -M master  # Ensure the branch is "master"
    git push -u origin main  # Push the code to GitHub
 
+#  Set Up a Proper Branching Strategy (Best Practice)
+ git status # to check the sgtatus
+
+ 1. Create a Development Branch (dev)
+ git checkout -b dev
+ git push origin dev
+
+ This dev branch will be used for development and testing.
+
+ 2. Create Feature Branches for New Changes
+ Every time you make a new change, create a new feature branch from dev.This allows you to work on changes separately and merge only when ready.
+
+git checkout -b feature-new-ui
+
+  3. Add Project Files & Push to GitHub
+  git add .
+  git commit -m "Initial commit - Added chatbot project"
+  git push origin feature-new-ui
+
+  This pushes the changes to your feature branch (not main).
+
+  4. Create a Pull Request (PR) & Merge
+  Since we don’t commit directly to main, we merge via PRs.
+
+-> Steps in GitHub UI
+Go to your repository on GitHub.
+Click on Pull Requests → New Pull Request.
+Select feature-new-ui as the source and dev as the target.
+Click Create Pull Request and describe your changes.
+Review, test, and merge into dev.
+#Once dev is stable, repeat the process to merge it into main.
+
+
+
 
