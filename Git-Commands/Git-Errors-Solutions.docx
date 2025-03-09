@@ -1,0 +1,40 @@
+Error#1
+"remote: Permission to Preetha-ms/techysvault.git denied to preetha-msft.
+fatal: unable to access 'https://github.com/Preetha-ms/techysvault/': The requested URL returned error: 403"
+
+The error message you're seeing indicates that you don't have the necessary permissions to push changes to the repository.
+
+Troubleshooting Steps->
+1. git remote -v
+-> Verify Your GitHub Username (Matching the PAT Owner)
+-> GitHub username matches your PAT Owner
+->  Verify repo access
+
+
+Solution#1
+
+Genrate PAT and connect to git as shown below-
+git remote set-url origin https://<token>@github.com/Preetha-ms/techysvault.git
+
+##How to Generate PAT token?
+Log in to GitHub: Go to GitHub and log in to your account.
+
+Navigate to Settings: Click on your profile picture in the upper-right corner and select "Settings" from the dropdown menu.
+
+Access Developer Settings: In the left sidebar, scroll down and click on "Developer settings".
+
+Personal Access Tokens: Click on "Personal access tokens" in the left sidebar.
+
+Generate New Token: Click on the "Generate new token" button.
+
+Token Description: In the "Note" field, enter a descriptive name for your token.
+
+Set Expiration: Choose an expiration date for your token. You can select a default option or click "Custom" to enter a specific date.
+
+Select Scopes: Select the scopes you want to grant this token. For accessing repositories from the command line, you should select repo.
+
+Generate Token: Click on the "Generate token" button.
+
+Copy the Token: Once the token is generated, copy it and store it securely. You won’t be able to see it again.
+
+*******************************************************************************************************************************************
